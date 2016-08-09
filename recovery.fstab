@@ -6,4 +6,4 @@
 /misc       emmc        /dev/block/platform/mtk-msdc.0/by-name/para
 /recovery   emmc        /dev/block/platform/mtk-msdc.0/by-name/recovery
 /system     ext4        /dev/block/platform/mtk-msdc.0/by-name/system
-/sd-ext     ext4        /dev/block/mmcblk0p1
+/sd-ext     auto        /dev/block/mmcblk0p1
