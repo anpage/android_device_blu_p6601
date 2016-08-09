@@ -22,6 +22,11 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    init.modem.rc \
+    init.p6601.rc \
+    init.p6601.usb.rc \
+    init.project.rc \
+    ueventd.p6601.rc \
     init.recovery.p6601.rc
 
 $(call inherit-product, build/target/product/full.mk)
