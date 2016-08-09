@@ -7,6 +7,7 @@ $(call inherit-product-if-exists, vendor/blu/p6601/p6601-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/blu/p6601/overlay
 
+LOCAL_PATH := device/blu/p6601
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/blu/p6601/kernel
@@ -16,6 +17,7 @@ endif
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
+		$(LOCAL_PATH)/rootdir/root/twrp.fstab:recovery/root/etc/twrp.fstab
 
 $(call inherit-product, build/target/product/full.mk)
 
